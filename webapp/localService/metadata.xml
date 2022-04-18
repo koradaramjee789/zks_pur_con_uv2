@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="Aggregation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="Org.OData.Measures.V1" Alias="Measures"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
+    </edmx:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="cds_zrk_ui_pur_con_ud" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <EntityType Name="I_CurrencyType" sap:label="Currency" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Currency"/>
+                </Key>
+                <Property Name="Currency" Type="Edm.String" Nullable="false" MaxLength="5" sap:display-format="UpperCase" sap:text="Currency_Text" sap:label="Currency" sap:quickinfo="Currency Key" sap:semantics="currency-code"/>
+                <Property Name="Currency_Text" Type="Edm.String" MaxLength="40" sap:label="Description" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Decimals" Type="Edm.Byte" sap:label="Decimal Places" sap:quickinfo="Number of decimal places"/>
+                <Property Name="CurrencyISOCode" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="ISO Code" sap:quickinfo="ISO Currency Code"/>
+                <Property Name="AlternativeCurrencyKey" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Alternative Key"/>
+                <Property Name="IsPrimaryCurrencyForISOCrcy" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Primary" sap:quickinfo="Primary SAP Currency Code for ISO Code"/>
+            </EntityType>
+            <EntityType Name="I_DraftAdministrativeDataType" sap:label="Draft Administration Data" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="DraftUUID"/>
+                    <PropertyRef Name="DraftEntityType"/>
+                </Key>
+                <Property Name="DraftUUID" Type="Edm.Guid" Nullable="false" sap:label="Draft (Technical ID)"/>
+                <Property Name="DraftEntityType" Type="Edm.String" Nullable="false" MaxLength="30" sap:display-format="UpperCase" sap:label="Draft Entity ID"/>
+                <Property Name="CreationDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Created On"/>
+                <Property Name="CreatedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:text="CreatedByUserDescription" sap:label="Draft Created By"/>
+                <Property Name="LastChangeDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Last Changed On"/>
+                <Property Name="LastChangedByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:text="LastChangedByUserDescription" sap:label="Draft Last Changed By"/>
+                <Property Name="DraftAccessType" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Draft Access Type"/>
+                <Property Name="ProcessingStartDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft In Process Since"/>
+                <Property Name="InProcessByUser" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:text="InProcessByUserDescription" sap:label="Draft In Process By"/>
+                <Property Name="DraftIsKeptByUser" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Draft Is Kept By User"/>
+                <Property Name="EnqueueStartDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Locked Since"/>
+                <Property Name="DraftIsCreatedByMe" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Draft Created By Me"/>
+                <Property Name="DraftIsLastChangedByMe" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Draft Last Changed By Me"/>
+                <Property Name="DraftIsProcessedByMe" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Draft In Process By Me"/>
+                <Property Name="CreatedByUserDescription" Type="Edm.String" MaxLength="80" sap:label="Draft Created By (Description)"/>
+                <Property Name="LastChangedByUserDescription" Type="Edm.String" MaxLength="80" sap:label="Draft Last Changed By (Description)"/>
+                <Property Name="InProcessByUserDescription" Type="Edm.String" MaxLength="80" sap:label="Draft In Process By (Description)"/>
+            </EntityType>
+            <EntityType Name="I_UnitOfMeasureType" sap:label="Unit of Measure" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="UnitOfMeasure"/>
+                </Key>
+                <Property Name="UnitOfMeasure" Type="Edm.String" Nullable="false" MaxLength="3" sap:text="UnitOfMeasure_Text" sap:label="Unit of Measure" sap:semantics="unit-of-measure"/>
+                <Property Name="UnitOfMeasure_Text" Type="Edm.String" MaxLength="30" sap:label="UoM Text" sap:quickinfo="Unit of Measurement Text (Maximum 30 Characters)" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="UnitOfMeasureSAPCode" Type="Edm.String" MaxLength="3" sap:label="Internal SAP Code" sap:quickinfo="Unit of Measurement, Internal SAP Code (No Conversion)"/>
+                <Property Name="UnitOfMeasureISOCode" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="ISO code" sap:quickinfo="ISO code for unit of measurement"/>
+                <Property Name="IsPrimaryUnitForISOCode" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Primary code" sap:quickinfo="Selection field for conversion from ISO code to int. code"/>
+                <Property Name="UnitOfMeasureNumberOfDecimals" Type="Edm.Int16" sap:label="Decimal Rounding" sap:quickinfo="No. of decimal places for rounding"/>
+                <Property Name="UnitOfMeasureIsCommercial" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Commercial meas.unit" sap:quickinfo="Commercial measurement unit ID"/>
+                <Property Name="UnitOfMeasureDimension" Type="Edm.String" MaxLength="6" sap:display-format="UpperCase" sap:label="Dimension" sap:quickinfo="Dimension key"/>
+                <Property Name="SIUnitCnvrsnRateNumerator" Type="Edm.Int32" sap:label="Numerator" sap:quickinfo="Numerator for conversion to SI unit"/>
+                <Property Name="SIUnitCnvrsnRateDenominator" Type="Edm.Int32" sap:label="Denominator" sap:quickinfo="Denominator for conversion into SI unit"/>
+                <Property Name="SIUnitCnvrsnRateExponent" Type="Edm.Int16" sap:label="Exponent" sap:quickinfo="base ten exponent for conversion to SI unit"/>
+                <Property Name="SIUnitCnvrsnAdditiveValue" Type="Edm.Decimal" Precision="9" Scale="6" sap:label="Additive constant" sap:quickinfo="Additive constant for conversion to SI unit"/>
+                <Property Name="UnitOfMeasureDspExponent" Type="Edm.Int16" sap:label="float. point exp." sap:quickinfo="Base ten exponent for floating-point display"/>
+                <Property Name="UnitOfMeasureDspNmbrOfDcmls" Type="Edm.Int16" sap:label="Decimal Places" sap:quickinfo="Number of decimal places for number display"/>
+                <Property Name="UnitOfMeasureTemperature" Type="Edm.Double" sap:unit="UnitOfMeasureTemperatureUnit" sap:label="Temperature"/>
+                <Property Name="UnitOfMeasureTemperatureUnit" Type="Edm.String" MaxLength="3" sap:label="Temperature unit" sap:semantics="unit-of-measure"/>
+                <Property Name="UnitOfMeasurePressure" Type="Edm.Double" sap:unit="UnitOfMeasurePressureUnit" sap:label="Pressure Value"/>
+                <Property Name="UnitOfMeasurePressureUnit" Type="Edm.String" MaxLength="3" sap:label="Unit of Pressure" sap:semantics="unit-of-measure"/>
+            </EntityType>
+            <EntityType Name="ZRK_C_PC_STATUSType" sap:label="DD for status" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Code"/>
+                </Key>
+                <Property Name="Code" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:text="Status" sap:label="Status code"/>
+                <Property Name="Status" Type="Edm.String" MaxLength="30" sap:label="Status"/>
+            </EntityType>
+            <EntityType Name="PurConItemCondsType" sap:label="Projection entity for item conditions" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CondUuid"/>
+                    <PropertyRef Name="IsActiveEntity"/>
+                </Key>
+                <Property Name="Delete_mc" Type="Edm.Boolean" sap:label="Dyn. Method Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Update_mc" Type="Edm.Boolean" sap:label="Dyn. Method Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CondUuid" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="ConUuid" Type="Edm.Guid" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ConItemUuid" Type="Edm.Guid" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CondType" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Condition type"/>
+                <Property Name="ValidFrom" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid from"/>
+                <Property Name="ValidTo" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid to"/>
+                <Property Name="Price" Type="Edm.Decimal" Precision="10" Scale="3" sap:unit="Currency" sap:variable-scale="true" sap:label="Price" sap:heading=""/>
+                <Property Name="Currency" Type="Edm.String" MaxLength="5" sap:label="Currency" sap:heading="" sap:value-list="standard" sap:semantics="currency-code"/>
+                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Created By User"/>
+                <Property Name="CreatedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Creation Date Time"/>
+                <Property Name="LastChangedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Loc. Changed By" sap:quickinfo="Local Instance Last Changed By User"/>
+                <Property Name="LastChangedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Last Changed" sap:quickinfo="Last Change Date Time"/>
+                <Property Name="LoclLastChangedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Loc. Last Changed" sap:quickinfo="Local Instance Last Change Date Time"/>
+                <Property Name="HasDraftEntity" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Has Draft" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="DraftEntityCreationDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Created On" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="DraftEntityLastChangeDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Last Changed On" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="HasActiveEntity" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Has active" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="IsActiveEntity" Type="Edm.Boolean" Nullable="false" sap:display-format="UpperCase" sap:label="Is active" sap:creatable="false" sap:updatable="false"/>
+                <NavigationProperty Name="DraftAdministrativeData" Relationship="cds_zrk_ui_pur_con_ud.assoc_4049E4E6422ECFB18E2A5E5FD6491ECC" FromRole="FromRole_assoc_4049E4E6422ECFB18E2A5E5FD6491ECC" ToRole="ToRole_assoc_4049E4E6422ECFB18E2A5E5FD6491ECC"/>
+                <NavigationProperty Name="SiblingEntity" Relationship="cds_zrk_ui_pur_con_ud.assoc_D353D19DFF48E91154643FDEE28A1BAE" FromRole="FromRole_assoc_D353D19DFF48E91154643FDEE28A1BAE" ToRole="ToRole_assoc_D353D19DFF48E91154643FDEE28A1BAE"/>
+                <NavigationProperty Name="to_PurCon" Relationship="cds_zrk_ui_pur_con_ud.assoc_622BFA6F61E677A68D6EB3228F52CD1A" FromRole="FromRole_assoc_622BFA6F61E677A68D6EB3228F52CD1A" ToRole="ToRole_assoc_622BFA6F61E677A68D6EB3228F52CD1A"/>
+                <NavigationProperty Name="to_PurConItem" Relationship="cds_zrk_ui_pur_con_ud.assoc_6FE5316AED52DFA257FC5477DDD66A93" FromRole="ToRole_assoc_6FE5316AED52DFA257FC5477DDD66A93" ToRole="FromRole_assoc_6FE5316AED52DFA257FC5477DDD66A93"/>
+            </EntityType>
+            <EntityType Name="PurConItemsType" sap:label="Project view for contract item" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ConItemUuid"/>
+                    <PropertyRef Name="IsActiveEntity"/>
+                </Key>
+                <Property Name="Delete_mc" Type="Edm.Boolean" sap:label="Dyn. Method Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Update_mc" Type="Edm.Boolean" sap:label="Dyn. Method Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="to_PurConItemCond_oc" Type="Edm.Boolean" sap:label="Dynamic CbA-Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ConItemUuid" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="ConUuid" Type="Edm.Guid" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ItemNo" Type="Edm.String" MaxLength="5" sap:display-format="NonNegative" sap:label="Item No." sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Description" Type="Edm.String" MaxLength="40" sap:label="Description"/>
+                <Property Name="PartNo" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Part No" sap:value-list="standard"/>
+                <Property Name="Unit" Type="Edm.String" MaxLength="3" sap:label="Unit" sap:value-list="standard" sap:semantics="unit-of-measure"/>
+                <Property Name="CommCode" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Category Id" sap:value-list="standard"/>
+                <Property Name="Quantity" Type="Edm.Decimal" Precision="10" Scale="2" sap:unit="Unit" sap:label="Quantity"/>
+                <Property Name="Price" Type="Edm.Decimal" Precision="10" Scale="3" sap:unit="Currency" sap:variable-scale="true" sap:label="Price" sap:heading=""/>
+                <Property Name="Currency" Type="Edm.String" MaxLength="5" sap:label="Currency Code" sap:quickinfo="Flight Reference Scenario: Currency Code" sap:value-list="standard" sap:semantics="currency-code"/>
+                <Property Name="SrcReqNo" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Purchase requisition" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="SrcReqItem" Type="Edm.String" MaxLength="5" sap:display-format="NonNegative" sap:label="PR Item No" sap:quickinfo="Item No." sap:creatable="false" sap:updatable="false"/>
+                <Property Name="SrcOrdNo" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Purchase order" sap:quickinfo="Purchase Order" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="SrcOrdItem" Type="Edm.String" MaxLength="5" sap:display-format="NonNegative" sap:label="Item No." sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Created By User"/>
+                <Property Name="CreatedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Creation Date Time"/>
+                <Property Name="LastChangedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Loc. Changed By" sap:quickinfo="Local Instance Last Changed By User"/>
+                <Property Name="LastChangedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Last Changed" sap:quickinfo="Last Change Date Time"/>
+                <Property Name="LoclLastChangedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Loc. Last Changed" sap:quickinfo="Local Instance Last Change Date Time"/>
+                <Property Name="HasDraftEntity" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Has Draft" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="DraftEntityCreationDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Created On" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="DraftEntityLastChangeDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Last Changed On" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="HasActiveEntity" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Has active" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="IsActiveEntity" Type="Edm.Boolean" Nullable="false" sap:display-format="UpperCase" sap:label="Is active" sap:creatable="false" sap:updatable="false"/>
+                <NavigationProperty Name="DraftAdministrativeData" Relationship="cds_zrk_ui_pur_con_ud.assoc_0FE294F739F00D2DEFBF450E8986D0D2" FromRole="FromRole_assoc_0FE294F739F00D2DEFBF450E8986D0D2" ToRole="ToRole_assoc_0FE294F739F00D2DEFBF450E8986D0D2"/>
+                <NavigationProperty Name="SiblingEntity" Relationship="cds_zrk_ui_pur_con_ud.assoc_1EBB9DAB5395046290135A6A3BA6197D" FromRole="FromRole_assoc_1EBB9DAB5395046290135A6A3BA6197D" ToRole="ToRole_assoc_1EBB9DAB5395046290135A6A3BA6197D"/>
+                <NavigationProperty Name="to_PurConItemCond" Relationship="cds_zrk_ui_pur_con_ud.assoc_6FE5316AED52DFA257FC5477DDD66A93" FromRole="FromRole_assoc_6FE5316AED52DFA257FC5477DDD66A93" ToRole="ToRole_assoc_6FE5316AED52DFA257FC5477DDD66A93"/>
+                <NavigationProperty Name="to_PurCon" Relationship="cds_zrk_ui_pur_con_ud.assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5" FromRole="ToRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5" ToRole="FromRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5"/>
+            </EntityType>
+            <EntityType Name="PurConType" sap:label="Project for unmanaged draft" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ConUuid"/>
+                    <PropertyRef Name="IsActiveEntity"/>
+                </Key>
+                <Property Name="Edit_ac" Type="Edm.Boolean" sap:label="Dyn. Action Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Forward_ac" Type="Edm.Boolean" sap:label="Dyn. Action Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Prepare_ac" Type="Edm.Boolean" sap:label="Dyn. Action Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Delete_mc" Type="Edm.Boolean" sap:label="Dyn. Method Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Update_mc" Type="Edm.Boolean" sap:label="Dyn. Method Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="to_PurConItem_oc" Type="Edm.Boolean" sap:label="Dynamic CbA-Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ConUuid" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)"/>
+                <Property Name="ObjectId" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Purchase Contract" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Description" Type="Edm.String" MaxLength="40" sap:label="Description"/>
+                <Property Name="Buyer" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="BuyerName" sap:label="Buyer Id" sap:value-list="standard"/>
+                <Property Name="BuyerName" Type="Edm.String" MaxLength="40" sap:label="Name" sap:heading="" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Supplier" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:text="SupplierName" sap:label="Supplier Name" sap:quickinfo="Supplier Number" sap:value-list="standard"/>
+                <Property Name="SupplierName" Type="Edm.String" MaxLength="40" sap:label="Name" sap:heading="" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="SupConId" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Supplier contact" sap:quickinfo="Contact Person" sap:value-list="standard"/>
+                <Property Name="SendVia" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Send via" sap:value-list="fixed-values"/>
+                <Property Name="sent_via_text" Type="Edm.String" MaxLength="40" sap:label="Name" sap:heading=""/>
+                <Property Name="CompCode" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Company code" sap:value-list="standard"/>
+                <Property Name="StatCode" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Status code" sap:creatable="false" sap:updatable="false" sap:value-list="fixed-values"/>
+                <Property Name="FisclYear" Type="Edm.String" MaxLength="4" sap:display-format="NonNegative" sap:label="Financial year" sap:value-list="fixed-values"/>
+                <Property Name="ValidFrom" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid from"/>
+                <Property Name="ValidTo" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Valid to"/>
+                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Created By User" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CreatedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Creation Date Time"/>
+                <Property Name="LastChangedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Loc. Changed By" sap:quickinfo="Local Instance Last Changed By User"/>
+                <Property Name="LastChangedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Last Changed" sap:quickinfo="Last Change Date Time"/>
+                <Property Name="LoclLastChangedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Loc. Last Changed" sap:quickinfo="Local Instance Last Change Date Time"/>
+                <Property Name="HasDraftEntity" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Has Draft" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="DraftEntityCreationDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Created On" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="DraftEntityLastChangeDateTime" Type="Edm.DateTimeOffset" Precision="7" sap:label="Draft Last Changed On" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="HasActiveEntity" Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Has active" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="IsActiveEntity" Type="Edm.Boolean" Nullable="false" sap:display-format="UpperCase" sap:label="Is active" sap:creatable="false" sap:updatable="false"/>
+                <NavigationProperty Name="DraftAdministrativeData" Relationship="cds_zrk_ui_pur_con_ud.assoc_03FEB79209400879DE9612085C8C4F26" FromRole="FromRole_assoc_03FEB79209400879DE9612085C8C4F26" ToRole="ToRole_assoc_03FEB79209400879DE9612085C8C4F26"/>
+                <NavigationProperty Name="SiblingEntity" Relationship="cds_zrk_ui_pur_con_ud.assoc_3218F4709146A8D194A82FCD344603F6" FromRole="FromRole_assoc_3218F4709146A8D194A82FCD344603F6" ToRole="ToRole_assoc_3218F4709146A8D194A82FCD344603F6"/>
+                <NavigationProperty Name="to_PurConItem" Relationship="cds_zrk_ui_pur_con_ud.assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5" FromRole="FromRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5" ToRole="ToRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5"/>
+            </EntityType>
+            <EntityType Name="BuyerF4Type" sap:label="DD for buyer" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="BuyerId"/>
+                </Key>
+                <Property Name="BuyerId" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="Name" sap:label="Buyer Id"/>
+                <Property Name="Name" Type="Edm.String" MaxLength="40" sap:label="Name" sap:heading=""/>
+                <Property Name="EmailId" Type="Edm.String" MaxLength="80" sap:label="Email Id"/>
+            </EntityType>
+            <EntityType Name="zrk_i_categoriesType" sap:label="data definition for categories" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CategoryId"/>
+                </Key>
+                <Property Name="CategoryId" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="Description" sap:label="Category Id"/>
+                <Property Name="Description" Type="Edm.String" MaxLength="40" sap:label="Description"/>
+            </EntityType>
+            <EntityType Name="ZRK_I_COMP_CODEType" sap:label="DD for company code" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CompCode"/>
+                </Key>
+                <Property Name="CompCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Undefined range (can be used for patch levels)" sap:heading=""/>
+            </EntityType>
+            <EntityType Name="ZRK_I_FISCAL_YEARType" sap:label="DD for financial year" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="fiscal_year"/>
+                </Key>
+                <Property Name="fiscal_year" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="NonNegative" sap:label="Financial year"/>
+            </EntityType>
+            <EntityType Name="ZRK_I_PARTSType" sap:label="Data definition for Parts" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="PartNo"/>
+                </Key>
+                <Property Name="PartNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="Description" sap:label="Part No"/>
+                <Property Name="Description" Type="Edm.String" MaxLength="40" sap:label="Description"/>
+                <Property Name="CategoryId" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Category Id" sap:value-list="standard"/>
+                <Property Name="Unit" Type="Edm.String" MaxLength="3" sap:label="Unit" sap:semantics="unit-of-measure"/>
+            </EntityType>
+            <EntityType Name="ZRK_I_SEND_VIAType" sap:label="Send Via" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="SendVia"/>
+                </Key>
+                <Property Name="SendVia" Type="Edm.String" Nullable="false" MaxLength="3" sap:display-format="UpperCase" sap:text="SentViaText" sap:label="Send via"/>
+                <Property Name="SentViaText" Type="Edm.String" MaxLength="40" sap:label="Name" sap:heading=""/>
+            </EntityType>
+            <EntityType Name="ZRK_I_SUPPLIERType" sap:label="DD For supplier" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="SupNo"/>
+                </Key>
+                <Property Name="SupNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:text="Name" sap:label="Supplier Name" sap:quickinfo="Supplier Number"/>
+                <Property Name="Name" Type="Edm.String" MaxLength="40" sap:label="Name" sap:heading=""/>
+            </EntityType>
+            <EntityType Name="ZRK_I_SUP_CONType" sap:label="DD for supplier contact" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="SupNo"/>
+                    <PropertyRef Name="SupConId"/>
+                </Key>
+                <Property Name="SupNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:label="Supplier Name" sap:quickinfo="Supplier Number"/>
+                <Property Name="SupConId" Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase" sap:label="Supplier contact" sap:quickinfo="Contact Person"/>
+                <Property Name="Name" Type="Edm.String" MaxLength="40" sap:label="Name" sap:heading=""/>
+                <Property Name="AppAccess" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Single-Character Flag" sap:heading=""/>
+                <Property Name="EmailId" Type="Edm.String" MaxLength="80" sap:label="Email Id"/>
+            </EntityType>
+            <EntityType Name="SAP__Currency" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CurrencyCode"/>
+                </Key>
+                <Property Name="CurrencyCode" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Currency" sap:semantics="currency-code"/>
+                <Property Name="ISOCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="ISO code"/>
+                <Property Name="Text" Type="Edm.String" Nullable="false" MaxLength="15" sap:label="Short text"/>
+                <Property Name="DecimalPlaces" Type="Edm.Byte" Nullable="false" sap:label="Decimals"/>
+            </EntityType>
+            <EntityType Name="SAP__UnitOfMeasure" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="UnitCode"/>
+                </Key>
+                <Property Name="UnitCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Internal UoM" sap:semantics="unit-of-measure"/>
+                <Property Name="ISOCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="ISO code"/>
+                <Property Name="ExternalCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Commercial"/>
+                <Property Name="Text" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="UoM Text"/>
+                <Property Name="DecimalPlaces" Type="Edm.Int16" sap:label="Decimal Places"/>
+            </EntityType>
+            <EntityType Name="SAP__DocumentDescription" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Id" Type="Edm.Guid" Nullable="false" sap:label="UUID"/>
+                <Property Name="CreatedBy" Type="Edm.String" Nullable="false" MaxLength="12"/>
+                <Property Name="CreatedAt" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Time Stamp"/>
+                <Property Name="FileName" Type="Edm.String" Nullable="false" MaxLength="256"/>
+                <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="256"/>
+                <NavigationProperty Name="Format" Relationship="cds_zrk_ui_pur_con_ud.to_format" FromRole="FromRole_to_format" ToRole="ToRole_to_format"/>
+                <NavigationProperty Name="TableColumns" Relationship="cds_zrk_ui_pur_con_ud.to_tablecolumns" FromRole="FromRole_to_tablecolumns" ToRole="ToRole_to_tablecolumns"/>
+                <NavigationProperty Name="CoverPage" Relationship="cds_zrk_ui_pur_con_ud.to_coverpage" FromRole="FromRole_to_coverpage" ToRole="ToRole_to_coverpage"/>
+                <NavigationProperty Name="Signature" Relationship="cds_zrk_ui_pur_con_ud.to_signature" FromRole="FromRole_to_signature" ToRole="ToRole_to_signature"/>
+            </EntityType>
+            <EntityType Name="SAP__Format" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Id" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DoEnableAccessibility" Type="Edm.Boolean" Nullable="false" sap:label="Indicator" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FontSize" Type="Edm.Int32" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Orientation" Type="Edm.String" Nullable="false" MaxLength="10" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PaperSize" Type="Edm.String" Nullable="false" MaxLength="10" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__TableColumns" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                    <PropertyRef Name="Name"/>
+                    <PropertyRef Name="Header"/>
+                </Key>
+                <Property Name="Id" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="256" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Header" Type="Edm.String" Nullable="false" MaxLength="256" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="HorizontalAlignment" Type="Edm.String" Nullable="false" MaxLength="10" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__CoverPage" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Title"/>
+                    <PropertyRef Name="Id"/>
+                    <PropertyRef Name="Name"/>
+                </Key>
+                <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="256" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Id" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="256" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Value" Type="Edm.String" Nullable="false" MaxLength="256" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__Signature" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Id" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DoSign" Type="Edm.Boolean" Nullable="false" sap:label="Indicator" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Reason" Type="Edm.String" Nullable="false" MaxLength="256" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <ComplexType Name="DummyFunctionImportResult">
+                <Property Name="IsInvalid" Type="Edm.Boolean" sap:label="TRUE"/>
+            </ComplexType>
+            <ComplexType Name="ZRK_I_PUR_CON_UD">
+                <Property Name="Buyer" Type="Edm.String" MaxLength="10" sap:label="Buyer Id"/>
+                <Property Name="CompCode" Type="Edm.String" MaxLength="4" sap:label="Company code"/>
+                <Property Name="ConUuid" Type="Edm.Guid" sap:label="UUID"/>
+                <Property Name="CreatedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Creation Date Time"/>
+                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:label="Created By User"/>
+                <Property Name="Description" Type="Edm.String" MaxLength="40" sap:label="Description"/>
+                <Property Name="FisclYear" Type="Edm.String" MaxLength="4" sap:label="Financial year"/>
+                <Property Name="LastChangedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Last Changed"/>
+                <Property Name="LastChangedBy" Type="Edm.String" MaxLength="12" sap:label="Loc. Changed By"/>
+                <Property Name="LoclLastChangedAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Loc. Last Changed"/>
+                <Property Name="ObjectId" Type="Edm.String" MaxLength="10" sap:label="Purchase Contract"/>
+                <Property Name="SendVia" Type="Edm.String" MaxLength="3" sap:label="Send via"/>
+                <Property Name="sent_via_text" Type="Edm.String" MaxLength="40" sap:label="Name"/>
+                <Property Name="StatCode" Type="Edm.String" MaxLength="4" sap:label="Status code"/>
+                <Property Name="SupConId" Type="Edm.String" MaxLength="10" sap:label="Supplier contact"/>
+                <Property Name="Supplier" Type="Edm.String" MaxLength="10" sap:label="Supplier Name"/>
+                <Property Name="ValidFrom" Type="Edm.DateTime" Precision="0" sap:label="Valid from"/>
+                <Property Name="ValidTo" Type="Edm.DateTime" Precision="0" sap:label="Valid to"/>
+            </ComplexType>
+            <Association Name="to_format" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.SAP__DocumentDescription" Multiplicity="1" Role="FromRole_to_format"/>
+                <End Type="cds_zrk_ui_pur_con_ud.SAP__Format" Multiplicity="1" Role="ToRole_to_format"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_format">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_format">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_tablecolumns" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.SAP__DocumentDescription" Multiplicity="1" Role="FromRole_to_tablecolumns"/>
+                <End Type="cds_zrk_ui_pur_con_ud.SAP__TableColumns" Multiplicity="*" Role="ToRole_to_tablecolumns"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_tablecolumns">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_tablecolumns">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_coverpage" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.SAP__DocumentDescription" Multiplicity="1" Role="FromRole_to_coverpage"/>
+                <End Type="cds_zrk_ui_pur_con_ud.SAP__CoverPage" Multiplicity="*" Role="ToRole_to_coverpage"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_coverpage">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_coverpage">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_signature" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.SAP__DocumentDescription" Multiplicity="1" Role="FromRole_to_signature"/>
+                <End Type="cds_zrk_ui_pur_con_ud.SAP__Signature" Multiplicity="1" Role="ToRole_to_signature"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_signature">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_signature">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="assoc_03FEB79209400879DE9612085C8C4F26" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConType" Multiplicity="1" Role="FromRole_assoc_03FEB79209400879DE9612085C8C4F26"/>
+                <End Type="cds_zrk_ui_pur_con_ud.I_DraftAdministrativeDataType" Multiplicity="0..1" Role="ToRole_assoc_03FEB79209400879DE9612085C8C4F26"/>
+            </Association>
+            <Association Name="assoc_3218F4709146A8D194A82FCD344603F6" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConType" Multiplicity="1" Role="FromRole_assoc_3218F4709146A8D194A82FCD344603F6"/>
+                <End Type="cds_zrk_ui_pur_con_ud.PurConType" Multiplicity="0..1" Role="ToRole_assoc_3218F4709146A8D194A82FCD344603F6"/>
+            </Association>
+            <Association Name="assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConType" Multiplicity="1" Role="FromRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5">
+                    <OnDelete Action="Cascade"/>
+                </End>
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemsType" Multiplicity="*" Role="ToRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5">
+                        <PropertyRef Name="ConUuid"/>
+                    </Principal>
+                    <Dependent Role="ToRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5">
+                        <PropertyRef Name="ConUuid"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="assoc_D353D19DFF48E91154643FDEE28A1BAE" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemCondsType" Multiplicity="1" Role="FromRole_assoc_D353D19DFF48E91154643FDEE28A1BAE"/>
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemCondsType" Multiplicity="0..1" Role="ToRole_assoc_D353D19DFF48E91154643FDEE28A1BAE"/>
+            </Association>
+            <Association Name="assoc_622BFA6F61E677A68D6EB3228F52CD1A" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemCondsType" Multiplicity="1" Role="FromRole_assoc_622BFA6F61E677A68D6EB3228F52CD1A"/>
+                <End Type="cds_zrk_ui_pur_con_ud.PurConType" Multiplicity="1" Role="ToRole_assoc_622BFA6F61E677A68D6EB3228F52CD1A"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_assoc_622BFA6F61E677A68D6EB3228F52CD1A">
+                        <PropertyRef Name="ConUuid"/>
+                    </Principal>
+                    <Dependent Role="FromRole_assoc_622BFA6F61E677A68D6EB3228F52CD1A">
+                        <PropertyRef Name="ConUuid"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="assoc_4049E4E6422ECFB18E2A5E5FD6491ECC" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemCondsType" Multiplicity="1" Role="FromRole_assoc_4049E4E6422ECFB18E2A5E5FD6491ECC"/>
+                <End Type="cds_zrk_ui_pur_con_ud.I_DraftAdministrativeDataType" Multiplicity="0..1" Role="ToRole_assoc_4049E4E6422ECFB18E2A5E5FD6491ECC"/>
+            </Association>
+            <Association Name="assoc_0FE294F739F00D2DEFBF450E8986D0D2" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemsType" Multiplicity="1" Role="FromRole_assoc_0FE294F739F00D2DEFBF450E8986D0D2"/>
+                <End Type="cds_zrk_ui_pur_con_ud.I_DraftAdministrativeDataType" Multiplicity="0..1" Role="ToRole_assoc_0FE294F739F00D2DEFBF450E8986D0D2"/>
+            </Association>
+            <Association Name="assoc_1EBB9DAB5395046290135A6A3BA6197D" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemsType" Multiplicity="1" Role="FromRole_assoc_1EBB9DAB5395046290135A6A3BA6197D"/>
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemsType" Multiplicity="0..1" Role="ToRole_assoc_1EBB9DAB5395046290135A6A3BA6197D"/>
+            </Association>
+            <Association Name="assoc_6FE5316AED52DFA257FC5477DDD66A93" sap:content-version="1">
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemsType" Multiplicity="1" Role="FromRole_assoc_6FE5316AED52DFA257FC5477DDD66A93">
+                    <OnDelete Action="Cascade"/>
+                </End>
+                <End Type="cds_zrk_ui_pur_con_ud.PurConItemCondsType" Multiplicity="*" Role="ToRole_assoc_6FE5316AED52DFA257FC5477DDD66A93"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_assoc_6FE5316AED52DFA257FC5477DDD66A93">
+                        <PropertyRef Name="ConItemUuid"/>
+                    </Principal>
+                    <Dependent Role="ToRole_assoc_6FE5316AED52DFA257FC5477DDD66A93">
+                        <PropertyRef Name="ConItemUuid"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="cds_zrk_ui_pur_con_ud_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true" sap:supported-formats="atom json xlsx pdf">
+                <EntitySet Name="SAP__Currencies" EntityType="cds_zrk_ui_pur_con_ud.SAP__Currency" sap:content-version="1"/>
+                <EntitySet Name="SAP__UnitsOfMeasure" EntityType="cds_zrk_ui_pur_con_ud.SAP__UnitOfMeasure" sap:content-version="1"/>
+                <EntitySet Name="SAP__MyDocumentDescriptions" EntityType="cds_zrk_ui_pur_con_ud.SAP__DocumentDescription" sap:content-version="1"/>
+                <EntitySet Name="SAP__FormatSet" EntityType="cds_zrk_ui_pur_con_ud.SAP__Format" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SAP__TableColumnsSet" EntityType="cds_zrk_ui_pur_con_ud.SAP__TableColumns" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SAP__CoverPageSet" EntityType="cds_zrk_ui_pur_con_ud.SAP__CoverPage" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="SAP__SignatureSet" EntityType="cds_zrk_ui_pur_con_ud.SAP__Signature" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="I_Currency" EntityType="cds_zrk_ui_pur_con_ud.I_CurrencyType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
+                <EntitySet Name="I_DraftAdministrativeData" EntityType="cds_zrk_ui_pur_con_ud.I_DraftAdministrativeDataType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="I_UnitOfMeasure" EntityType="cds_zrk_ui_pur_con_ud.I_UnitOfMeasureType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
+                <EntitySet Name="ZRK_C_PC_STATUS" EntityType="cds_zrk_ui_pur_con_ud.ZRK_C_PC_STATUSType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="PurConItemConds" EntityType="cds_zrk_ui_pur_con_ud.PurConItemCondsType" sap:content-version="1" sap:deletable-path="Delete_mc" sap:updatable-path="Update_mc"/>
+                <EntitySet Name="PurConItems" EntityType="cds_zrk_ui_pur_con_ud.PurConItemsType" sap:content-version="1" sap:deletable-path="Delete_mc" sap:updatable-path="Update_mc"/>
+                <EntitySet Name="PurCon" EntityType="cds_zrk_ui_pur_con_ud.PurConType" sap:searchable="true" sap:content-version="1" sap:deletable-path="Delete_mc" sap:updatable-path="Update_mc"/>
+                <EntitySet Name="BuyerF4" EntityType="cds_zrk_ui_pur_con_ud.BuyerF4Type" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="zrk_i_categories" EntityType="cds_zrk_ui_pur_con_ud.zrk_i_categoriesType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ZRK_I_COMP_CODE" EntityType="cds_zrk_ui_pur_con_ud.ZRK_I_COMP_CODEType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ZRK_I_FISCAL_YEAR" EntityType="cds_zrk_ui_pur_con_ud.ZRK_I_FISCAL_YEARType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ZRK_I_PARTS" EntityType="cds_zrk_ui_pur_con_ud.ZRK_I_PARTSType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ZRK_I_SEND_VIA" EntityType="cds_zrk_ui_pur_con_ud.ZRK_I_SEND_VIAType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ZRK_I_SUPPLIER" EntityType="cds_zrk_ui_pur_con_ud.ZRK_I_SUPPLIERType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ZRK_I_SUP_CON" EntityType="cds_zrk_ui_pur_con_ud.ZRK_I_SUP_CONType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <AssociationSet Name="to_formatSet" Association="cds_zrk_ui_pur_con_ud.to_format" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_format"/>
+                    <End EntitySet="SAP__FormatSet" Role="ToRole_to_format"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_03FEB79209400879DE9612085C8C4F26" Association="cds_zrk_ui_pur_con_ud.assoc_03FEB79209400879DE9612085C8C4F26" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurCon" Role="FromRole_assoc_03FEB79209400879DE9612085C8C4F26"/>
+                    <End EntitySet="I_DraftAdministrativeData" Role="ToRole_assoc_03FEB79209400879DE9612085C8C4F26"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_4049E4E6422ECFB18E2A5E5FD6491ECC" Association="cds_zrk_ui_pur_con_ud.assoc_4049E4E6422ECFB18E2A5E5FD6491ECC" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurConItemConds" Role="FromRole_assoc_4049E4E6422ECFB18E2A5E5FD6491ECC"/>
+                    <End EntitySet="I_DraftAdministrativeData" Role="ToRole_assoc_4049E4E6422ECFB18E2A5E5FD6491ECC"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_1EBB9DAB5395046290135A6A3BA6197D" Association="cds_zrk_ui_pur_con_ud.assoc_1EBB9DAB5395046290135A6A3BA6197D" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurConItems" Role="FromRole_assoc_1EBB9DAB5395046290135A6A3BA6197D"/>
+                    <End EntitySet="PurConItems" Role="ToRole_assoc_1EBB9DAB5395046290135A6A3BA6197D"/>
+                </AssociationSet>
+                <AssociationSet Name="to_tablecolumnsSet" Association="cds_zrk_ui_pur_con_ud.to_tablecolumns" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_tablecolumns"/>
+                    <End EntitySet="SAP__TableColumnsSet" Role="ToRole_to_tablecolumns"/>
+                </AssociationSet>
+                <AssociationSet Name="to_signatureSet" Association="cds_zrk_ui_pur_con_ud.to_signature" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_signature"/>
+                    <End EntitySet="SAP__SignatureSet" Role="ToRole_to_signature"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_622BFA6F61E677A68D6EB3228F52CD1A" Association="cds_zrk_ui_pur_con_ud.assoc_622BFA6F61E677A68D6EB3228F52CD1A" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurConItemConds" Role="FromRole_assoc_622BFA6F61E677A68D6EB3228F52CD1A"/>
+                    <End EntitySet="PurCon" Role="ToRole_assoc_622BFA6F61E677A68D6EB3228F52CD1A"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_0FE294F739F00D2DEFBF450E8986D0D2" Association="cds_zrk_ui_pur_con_ud.assoc_0FE294F739F00D2DEFBF450E8986D0D2" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurConItems" Role="FromRole_assoc_0FE294F739F00D2DEFBF450E8986D0D2"/>
+                    <End EntitySet="I_DraftAdministrativeData" Role="ToRole_assoc_0FE294F739F00D2DEFBF450E8986D0D2"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5" Association="cds_zrk_ui_pur_con_ud.assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurCon" Role="FromRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5"/>
+                    <End EntitySet="PurConItems" Role="ToRole_assoc_96579CA20E4262A6A4B1BAD7BC3EEEB5"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_6FE5316AED52DFA257FC5477DDD66A93" Association="cds_zrk_ui_pur_con_ud.assoc_6FE5316AED52DFA257FC5477DDD66A93" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurConItems" Role="FromRole_assoc_6FE5316AED52DFA257FC5477DDD66A93"/>
+                    <End EntitySet="PurConItemConds" Role="ToRole_assoc_6FE5316AED52DFA257FC5477DDD66A93"/>
+                </AssociationSet>
+                <AssociationSet Name="to_coverpageSet" Association="cds_zrk_ui_pur_con_ud.to_coverpage" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_coverpage"/>
+                    <End EntitySet="SAP__CoverPageSet" Role="ToRole_to_coverpage"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_3218F4709146A8D194A82FCD344603F6" Association="cds_zrk_ui_pur_con_ud.assoc_3218F4709146A8D194A82FCD344603F6" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurCon" Role="FromRole_assoc_3218F4709146A8D194A82FCD344603F6"/>
+                    <End EntitySet="PurCon" Role="ToRole_assoc_3218F4709146A8D194A82FCD344603F6"/>
+                </AssociationSet>
+                <AssociationSet Name="assoc_D353D19DFF48E91154643FDEE28A1BAE" Association="cds_zrk_ui_pur_con_ud.assoc_D353D19DFF48E91154643FDEE28A1BAE" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="PurConItemConds" Role="FromRole_assoc_D353D19DFF48E91154643FDEE28A1BAE"/>
+                    <End EntitySet="PurConItemConds" Role="ToRole_assoc_D353D19DFF48E91154643FDEE28A1BAE"/>
+                </AssociationSet>
+                <FunctionImport Name="PurConActivate" ReturnType="cds_zrk_ui_pur_con_ud.PurConType" EntitySet="PurCon" m:HttpMethod="POST" sap:action-for="cds_zrk_ui_pur_con_ud.PurConType">
+                    <Parameter Name="ConUuid" Type="Edm.Guid" Mode="In" sap:label="UUID"/>
+                    <Parameter Name="IsActiveEntity" Type="Edm.Boolean" Mode="In" sap:label="Is active"/>
+                </FunctionImport>
+                <FunctionImport Name="PurConDiscard" ReturnType="cds_zrk_ui_pur_con_ud.DummyFunctionImportResult" m:HttpMethod="POST" sap:action-for="cds_zrk_ui_pur_con_ud.PurConType">
+                    <Parameter Name="ConUuid" Type="Edm.Guid" Mode="In" sap:label="UUID"/>
+                    <Parameter Name="IsActiveEntity" Type="Edm.Boolean" Mode="In" sap:label="Is active"/>
+                </FunctionImport>
+                <FunctionImport Name="PurConEdit" ReturnType="cds_zrk_ui_pur_con_ud.PurConType" EntitySet="PurCon" m:HttpMethod="POST" sap:action-for="cds_zrk_ui_pur_con_ud.PurConType" sap:applicable-path="Edit_ac">
+                    <Parameter Name="ConUuid" Type="Edm.Guid" Mode="In" sap:label="UUID"/>
+                    <Parameter Name="IsActiveEntity" Type="Edm.Boolean" Mode="In" sap:label="Is active"/>
+                    <Parameter Name="PreserveChanges" Type="Edm.Boolean" Mode="In" Nullable="true" sap:label="TRUE"/>
+                </FunctionImport>
+                <FunctionImport Name="Forward" ReturnType="cds_zrk_ui_pur_con_ud.ZRK_I_PUR_CON_UD" m:HttpMethod="POST" sap:action-for="cds_zrk_ui_pur_con_ud.PurConType" sap:applicable-path="Forward_ac">
+                    <Parameter Name="ConUuid" Type="Edm.Guid" Mode="In" sap:label="UUID"/>
+                    <Parameter Name="IsActiveEntity" Type="Edm.Boolean" Mode="In" sap:label="Is active"/>
+                    <Parameter Name="ToBeBuyer" Type="Edm.String" Mode="In" MaxLength="10" Nullable="true" sap:value-list="standard" sap:label="Buyer Id"/>
+                </FunctionImport>
+                <FunctionImport Name="PurConPrepare" ReturnType="cds_zrk_ui_pur_con_ud.DummyFunctionImportResult" m:HttpMethod="POST" sap:action-for="cds_zrk_ui_pur_con_ud.PurConType" sap:applicable-path="Prepare_ac">
+                    <Parameter Name="ConUuid" Type="Edm.Guid" Mode="In" sap:label="UUID"/>
+                    <Parameter Name="IsActiveEntity" Type="Edm.Boolean" Mode="In" sap:label="Is active"/>
+                </FunctionImport>
+                <FunctionImport Name="PurConResume" ReturnType="cds_zrk_ui_pur_con_ud.DummyFunctionImportResult" m:HttpMethod="POST" sap:action-for="cds_zrk_ui_pur_con_ud.PurConType">
+                    <Parameter Name="ConUuid" Type="Edm.Guid" Mode="In" sap:label="UUID"/>
+                    <Parameter Name="IsActiveEntity" Type="Edm.Boolean" Mode="In" sap:label="Is active"/>
+                </FunctionImport>
+            </EntityContainer>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurCon" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.DraftRoot">
+                    <Record>
+                        <PropertyValue Property="ActivationAction" String="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurConActivate"/>
+                        <PropertyValue Property="DiscardAction" String="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurConDiscard"/>
+                        <PropertyValue Property="EditAction" String="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurConEdit"/>
+                        <PropertyValue Property="PreparationAction" String="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurConPrepare"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonFilterableProperties">
+                            <Collection>
+                                <PropertyPath>Edit_ac</PropertyPath>
+                                <PropertyPath>Forward_ac</PropertyPath>
+                                <PropertyPath>Prepare_ac</PropertyPath>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                                <PropertyPath>to_PurConItem_oc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.NavigationRestrictions">
+                    <Record>
+                        <PropertyValue Property="RestrictedProperties">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="DraftAdministrativeData"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="SiblingEntity"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="to_PurConItem"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Path="to_PurConItem_oc"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.SortRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonSortableProperties">
+                            <Collection>
+                                <PropertyPath>Edit_ac</PropertyPath>
+                                <PropertyPath>Forward_ac</PropertyPath>
+                                <PropertyPath>Prepare_ac</PropertyPath>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                                <PropertyPath>to_PurConItem_oc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurConItemConds" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.DraftNode">
+                    <Record/>
+                </Annotation>
+                <Annotation Term="Common.DraftActivationVia">
+                    <Collection>
+                        <String>cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurCon</String>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="Capabilities.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonFilterableProperties">
+                            <Collection>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.NavigationRestrictions">
+                    <Record>
+                        <PropertyValue Property="RestrictedProperties">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="DraftAdministrativeData"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="SiblingEntity"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="to_PurCon"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="to_PurConItem"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.SortRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonSortableProperties">
+                            <Collection>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurConItems" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.DraftNode">
+                    <Record/>
+                </Annotation>
+                <Annotation Term="Common.DraftActivationVia">
+                    <Collection>
+                        <String>cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/PurCon</String>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="Capabilities.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonFilterableProperties">
+                            <Collection>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                                <PropertyPath>to_PurConItemCond_oc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.NavigationRestrictions">
+                    <Record>
+                        <PropertyValue Property="RestrictedProperties">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="DraftAdministrativeData"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="SiblingEntity"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="to_PurCon"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Bool="false"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="NavigationProperty" NavigationPropertyPath="to_PurConItemCond"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Property="Insertable" Path="to_PurConItemCond_oc"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.SortRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonSortableProperties">
+                            <Collection>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                                <PropertyPath>to_PurConItemCond_oc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConItemCondsType/Currency" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueListForValidation" String=""/>
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Select currency from Dailog"/>
+                        <PropertyValue Property="CollectionPath" String="I_Currency"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Currency"/>
+                                    <PropertyValue Property="ValueListProperty" String="Currency"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Currency_Text"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Decimals"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="CurrencyISOCode"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="AlternativeCurrencyKey"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="IsPrimaryCurrencyForISOCrcy"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConItemsType/PartNo" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueListForValidation" String=""/>
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Part No"/>
+                        <PropertyValue Property="CollectionPath" String="ZRK_I_PARTS"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="PartNo"/>
+                                    <PropertyValue Property="ValueListProperty" String="PartNo"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Description"/>
+                                    <PropertyValue Property="ValueListProperty" String="Description"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="CommCode"/>
+                                    <PropertyValue Property="ValueListProperty" String="CategoryId"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Unit"/>
+                                    <PropertyValue Property="ValueListProperty" String="Unit"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConItemsType/Unit" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueListForValidation" String=""/>
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Select currency from Dailog"/>
+                        <PropertyValue Property="CollectionPath" String="I_UnitOfMeasure"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Unit"/>
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasure"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasure_Text"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureSAPCode"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureISOCode"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="IsPrimaryUnitForISOCode"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureNumberOfDecimals"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureIsCommercial"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureDimension"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="SIUnitCnvrsnRateNumerator"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="SIUnitCnvrsnRateDenominator"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="SIUnitCnvrsnRateExponent"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="SIUnitCnvrsnAdditiveValue"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureDspExponent"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureDspNmbrOfDcmls"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureTemperature"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasureTemperatureUnit"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasurePressure"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="UnitOfMeasurePressureUnit"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConItemsType/CommCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Category Id"/>
+                        <PropertyValue Property="CollectionPath" String="zrk_i_categories"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="CommCode"/>
+                                    <PropertyValue Property="ValueListProperty" String="CategoryId"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Description"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConItemsType/Currency" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueListForValidation" String=""/>
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Select currency from Dailog"/>
+                        <PropertyValue Property="CollectionPath" String="I_Currency"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Currency"/>
+                                    <PropertyValue Property="ValueListProperty" String="Currency"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Currency_Text"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Decimals"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="CurrencyISOCode"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="AlternativeCurrencyKey"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="IsPrimaryCurrencyForISOCrcy"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConType/Buyer" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String=""/>
+                        <PropertyValue Property="CollectionPath" String="BuyerF4"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Buyer"/>
+                                    <PropertyValue Property="ValueListProperty" String="BuyerId"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Name"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="EmailId"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConType/Supplier" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueListForValidation" String=""/>
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String=""/>
+                        <PropertyValue Property="CollectionPath" String="ZRK_I_SUPPLIER"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Supplier"/>
+                                    <PropertyValue Property="ValueListProperty" String="SupNo"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Name"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConType/SupConId" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueListForValidation" String=""/>
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String=""/>
+                        <PropertyValue Property="CollectionPath" String="ZRK_I_SUP_CON"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Supplier"/>
+                                    <PropertyValue Property="ValueListProperty" String="SupNo"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="SupConId"/>
+                                    <PropertyValue Property="ValueListProperty" String="SupConId"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Name"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="AppAccess"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="EmailId"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConType/SendVia" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String=""/>
+                        <PropertyValue Property="CollectionPath" String="ZRK_I_SEND_VIA"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="SendVia"/>
+                                    <PropertyValue Property="ValueListProperty" String="SendVia"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="SentViaText"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConType/CompCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueListForValidation" String=""/>
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String=""/>
+                        <PropertyValue Property="CollectionPath" String="ZRK_I_COMP_CODE"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="CompCode"/>
+                                    <PropertyValue Property="ValueListProperty" String="CompCode"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConType/StatCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String=""/>
+                        <PropertyValue Property="CollectionPath" String="ZRK_C_PC_STATUS"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="StatCode"/>
+                                    <PropertyValue Property="ValueListProperty" String="Status"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Code"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.PurConType/FisclYear" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String=""/>
+                        <PropertyValue Property="CollectionPath" String="ZRK_I_FISCAL_YEAR"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="FisclYear"/>
+                                    <PropertyValue Property="ValueListProperty" String="fiscal_year"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities/Forward/ToBeBuyer" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String=""/>
+                        <PropertyValue Property="CollectionPath" String="BuyerF4"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="ToBeBuyer"/>
+                                    <PropertyValue Property="ValueListProperty" String="BuyerId"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Name"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="EmailId"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.ZRK_I_PARTSType/CategoryId" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Category Id"/>
+                        <PropertyValue Property="CollectionPath" String="zrk_i_categories"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="CategoryId"/>
+                                    <PropertyValue Property="ValueListProperty" String="CategoryId"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="Description"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.I_CurrencyType/Currency" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.UnitSpecificScale" Path="Decimals"/>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.I_UnitOfMeasureType/UnitOfMeasure" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.UnitSpecificScale" Path="UnitOfMeasureDspNmbrOfDcmls"/>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.cds_zrk_ui_pur_con_ud_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Org.OData.Capabilities.V1.BatchSupport">
+                    <Record Type="Org.OData.Capabilities.V1.BatchSupportType">
+                        <PropertyValue Property="ReferencesAcrossChangeSetsSupported" Bool="true"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__CodeList.CurrencyCodes">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__Currencies"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__CodeList.UnitsOfMeasure">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__UnitsOfMeasure"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.SAP__Currency/CurrencyCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="SAP__common.Text" Path="Text"/>
+                <Annotation Term="SAP__common.UnitSpecificScale" Path="DecimalPlaces"/>
+                <Annotation Term="SAP__CodeList.StandardCode" Path="ISOCode"/>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.SAP__UnitOfMeasure/UnitCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="SAP__common.Text" Path="Text"/>
+                <Annotation Term="SAP__common.UnitSpecificScale" Path="DecimalPlaces"/>
+                <Annotation Term="SAP__CodeList.StandardCode" Path="ISOCode"/>
+                <Annotation Term="SAP__CodeList.ExternalCode" Path="ExternalCode"/>
+            </Annotations>
+            <Annotations Target="cds_zrk_ui_pur_con_ud.SAP__UnitOfMeasure" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="SAP__core.AlternateKeys">
+                    <Collection>
+                        <Record>
+                            <PropertyValue Property="Key">
+                                <Collection>
+                                    <Record>
+                                        <PropertyValue Property="Name" Path="ExternalCode"/>
+                                        <PropertyValue Property="Alias" String="ExternalCode"/>
+                                    </Record>
+                                </Collection>
+                            </PropertyValue>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <atom:link rel="self" href="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/sap/ZRK_UI_PUR_CON_UD_V2/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com/sap/opu/odata/sap/ZRK_UI_PUR_CON_UD_V2/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
